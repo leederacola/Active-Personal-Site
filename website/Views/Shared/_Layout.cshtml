@@ -8,31 +8,41 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+   
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"> | Ryan Madden |</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item nav-link">
+                    @Html.ActionLink("Home", "Index", "Home")
+                </li>
+                <li class="nav-item nav-link">
+                     @Html.ActionLink("Resume", "Resume", "Home")
+                </li>
+                <li class="nav-item nav-link">
+                    @Html.ActionLink("Projects", "Projects", "Home")
+                </li>
+            </ul>
+        </span>
+    </nav>
+
+
     <div class="container body-content">
+        <img id="bg" src="~/Content/img/bg.jpg" />
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+       
+            <div class="container-fluid">
+                <div class="foot">
+                    <a href="https://www.github.com" target="_blank"><img src="~/Content/img/git_good.png" width="30" height="30" alt=""></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="~/Content/img/link_good.png" width="30" height="30" alt=""></a>
+                </div>
+            </div>
+        
     </div>
 
     @Scripts.Render("~/bundles/jquery")

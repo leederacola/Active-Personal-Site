@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "Projects";
+}
+
+<h1 class="display-4">Projects</h1>
+<hr />
+<div id="accordion">
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Board Game Night / Board Game Buddy
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <p>
+                    Board Game Night is an application I am developing for my friends and I as a way to decide upon the game(s) we play in a civilized fasion
+                    because Aaron manipulated the player count of last months game night in order to play the game he wanted to play instead of the previsouly agreed upon title.
+                </p>
+                <p>
+                    Users will RSVP to a game night event, the group will then have access to each users game library, a game list will be filtered by player count 
+                    (ex. 5 players RSVP so 4 player games will be omitted from suggestion list). Then each user can vote or suggest games to be played that evening.</p>
+                <p>
+                    I will hopefully finish the mock functionality soon(no db currently).  My plan is to use Google Firebase first to quickly get it hosted and usable for my friends.
+                </p>
+                <p>
+                    Hopefully this can grow into a useable resource for my friends to plan game nights, record play stats, manage our game collections and function as a learning tool for myself. 
+                </p>
+                    
+                    <a href="https://github.com/leederacola/board-game-night" target="_blank">GitHub Repo</a>
+                    <span> | </span>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    This website!
+                </button>
+            </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <p>.Net MVC personal site to display resume and other projects.</p>
+                <p>
+                    <a href="#" target="_blank">GitHub Repo</a>
+                    <span> | </span>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Azul Score App
+                </button>
+            </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <p>
+                    Azul is my current favorate board game. <a href="https://boardgamegeek.com/boardgame/230802/azul">BGG Link</a>  I made an Angular 6 app using javascript and css flex grid to minic the look and logic of scoring in the game.  Its not that pretty but functional.
+                </p>
+                <p>
+                    <a href="https://github.com/leederacola/maybe-azul" target="_blank">GitHub Repo</a>
+                    <span> | </span>
+                    <a target="blank" href="https://azul-calc.firebaseapp.com/">Look!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Dynamic Calendar
+                </button>
+            </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <p>
+                    This was a code challange for recruiter.  Input days for calendar to span. Input start date. Render Calendar.  It is an Angular 6 app, using Google Material Design components.
+                </p>
+                <p>
+                    <a href="https://github.com/leederacola/calendar" target="_blank">GitHub Repo</a>
+                    <span> | </span>
+                    <a target="blank" href="https://calendar-host.firebaseapp.com/">Look!</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

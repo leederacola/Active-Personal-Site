@@ -20,9 +20,16 @@ namespace website.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Resume()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Resume";
+
+            return View();
+        }
+
+        public ActionResult Projects()
+        {
+            ViewBag.Message = "Projects";
 
             return View();
         }
